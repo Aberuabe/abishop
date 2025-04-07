@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  }
+  
+  .add-animation {
+    animation: bounceIn 0.4s ease forwards;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #cart li {
+    animation: fadeInCart 0.4s ease;
+  }
+  
+  @keyframes fadeInCart {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation section promo */
+  #promo-section {
+    animation: fadeSlideIn 1s ease both;
+  }
+  
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* WhatsApp Button animation */
+  #whatsapp-link {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #whatsapp-link:hover {
+    transform: scale(1.05) rotate(-1deg);
+    background-color: #25D366 !important;
+    color: white;
+  }
+  
